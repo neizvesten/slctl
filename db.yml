@@ -1,0 +1,8 @@
+#! /usr/bin/ansible-playbook
+
+- hosts: db
+  name: db
+  gather_facts: no
+  roles:
+    - common
+    - db
