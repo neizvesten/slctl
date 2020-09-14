@@ -1,0 +1,8 @@
+#! /usr/bin/ansible-playbook
+
+- hosts: proxy
+  name: proxy
+  gather_facts: no
+  roles:
+    - common
+    - proxy

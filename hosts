@@ -1,0 +1,6 @@
+app:
+  hosts:
+    localhost
+proxy:
+  hosts:
+    localhost

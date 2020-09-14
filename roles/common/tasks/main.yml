@@ -1,0 +1,13 @@
+- name: Docker official apt key added
+  apt_key:
+    url: https://download.docker.com/linux/debian/gpg
+    state: present
+- name: Docker apt repo added
+  apt_repository:
+    repo: deb https://download.docker.com/linux/debian buster stable
+    state: present
+- name: Packages installed
+  apt:
+    pkg: ['docker-ce', 'docker-compose']
+    state: present
+    update_cache: true
