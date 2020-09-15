@@ -1,5 +1,0 @@
-- name: Packages installed
-  apt:
-    pkg: ['docker.io', 'docker-compose']
-    state: present
-    update_cache: true

@@ -1,9 +1,3 @@
-app:
-  hosts:
-    localhost
-db:
-  hosts:
-    localhost
-proxy:
+slctl:
   hosts:
     localhost

@@ -1,0 +1,16 @@
+- name: Packages installed
+  apt:
+    pkg: ['docker.io', 'docker-compose']
+    state: present
+    update_cache: true
+- name: Directory structure created
+  file:
+    path: /slctl
+    state: directory
+- name: Files copied
+  copy:
+    src: "{{ item }}"
+    dest: "/slctl/{{ item }}"
+  with_items:
+  - nginx.conf
+  - docker-compose.yml

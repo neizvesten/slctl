@@ -1,8 +1,0 @@
-#! /usr/bin/ansible-playbook
-
-- hosts: app
-  name: app
-  gather_facts: no
-  roles:
-    - common
-    - app

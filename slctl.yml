@@ -1,8 +1,7 @@
 #! /usr/bin/ansible-playbook
 
-- hosts: proxy
-  name: proxy
+- hosts: slctl
+  name: slctl
   gather_facts: no
   roles:
-    - common
-    - proxy
+    - slctl
